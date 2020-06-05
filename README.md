@@ -9,6 +9,11 @@ The dataset contains 2 folders: yes and no which contains 253 Brain MRI Images. 
 
 **Note:** sometimes viewing IPython notebooks using GitHub viewer doesn't work as expected, so you can always view them using [nbviewer](https://nbviewer.jupyter.org/).
 
+# Background
+Brain is a complex organ since it contains more than 10 billion working brain cells. Primary brain tumors can be either malignant (contain cancer cells) or benign (do not contain cancer cells). A primary brain tumor is a tumor which begins in the brain tissue. If a cancerous tumor starts elsewhere in the body, it can spread cancer cells, which grow in the brain. These type of tumors are called secondary or metastatic brain tumors. The malignant tumor tends to grow and spread in a rapid and uncontrolled way that can cause death and the Tumor are graded according to how aggressive. They are as:
+1. LGG: Low Grade Tumor (Benign stage)
+2. HGG: High Grade Tumor (Malignant stage)
+
 ## Data Augmentation:
 
 **Why did I use data augmentation?**
@@ -43,6 +48,8 @@ The data was split in the following way:
 # Neural Network Architecture
 
 This is the architecture that I've built:
+
+Used Transfer Learning from VGG16 network to obtain the pre-trained weights and then trained our model over them, following the architecture described below.
 
 ![Neural Network Architecture](convnet_architecture.jpg)
 
